@@ -1,0 +1,55 @@
+    :root{
+        --section-colour: #2E2F42;
+        --cloud-bckground: #F4F4FD;
+        --active-button: #404BBF;
+        --color-text-main: #2E2F42;
+        --text-discription: #434455;
+
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .banner,footer{
+    background-color: var(--section-colour);
+    }
+
+    .team{
+        background-color: var(--cloud-bckground);
+    }
+
+    button{
+        background-color: var(--active-button);
+        color: #ffffff;
+
+    }
+
+    li>button{
+        background-color: var(--cloud-bckground);
+        color: var(--active-button);
+    }
+    li>button:hover{
+        background-color: var(--active-button);
+        color: var(--cloud-bckground);
+        
+    }
+    
+
+    h2.h3 {
+        color: var(--color-text-main);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    h3{
+        color: var(--text-discription);
+
+    }
