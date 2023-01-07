@@ -7,12 +7,88 @@
 
     }
 
+    body {
+        font-family: 'Roboto',sans-serif;
+        color: #2E2F42;
+    }
+
+    .color-logo{
+        color: #404BBF;
+    }
+    .logo{
+        font-family: 'Raleway';
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    footer>.logo{
+        color: #ffffff;
+        font-family: 'Raleway';
+        font-size: 18px;
+        line-height: 1.33;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .footer-nav{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .footer>p{
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #E7E9FC;
+    }
+
+    .contatcs{
+        font-size: 16px;
+        line-height: 1.5px;
+        color: #434455;
+    }
+
+    .title{
+        font-size: 56px;
+        line-height: 1.07x;
+
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+    }
+
+    h2{
+        font-size: 36px;
+        line-height: 1.1;
+
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+
+    h3{
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+    li>p{
+        font-size: 16px;
+        line-height: 1.5;
+
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    
+
     ul{
         list-style-type: none;
     }
 
     a{
         text-decoration: none;
+        color: inherit;
     }
 
     .banner,footer{
@@ -26,6 +102,13 @@
     button{
         background-color: var(--active-button);
         color: #ffffff;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 1.5; 
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
 
     }
 
@@ -39,17 +122,3 @@
         
     }
     
-
-    h2.h3 {
-        color: var(--color-text-main);
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 40px;
-    }
-
-    h3{
-        color: var(--text-discription);
-
-    }
