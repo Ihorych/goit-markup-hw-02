@@ -1,86 +1,21 @@
     :root{
-        --section-colour: #2E2F42;
-        --cloud-bckground: #F4F4FD;
+        --primary-brand: #4D5AE5;
         --active-button: #404BBF;
-        --color-text-main: #2E2F42;
+        --section-colour: #2E2F42;
+        --success: #31D0AA;
         --text-discription: #434455;
-
+        --subtle-text: #8E8F99;
+        --accent: #E7E9FC;
+        --cloud-bckground: #F4F4FD;
+        --modal-overlay: #2E2F42;
     }
 
     body {
         font-family: 'Roboto',sans-serif;
-        color: #2E2F42;
-    }
-
-    .color-logo{
-        color: #404BBF;
-    }
-    .logo{
-        font-family: 'Raleway';
-        font-size: 18px;
-        line-height: 1.33;
-    }
-
-    footer>.logo{
-        color: #ffffff;
-        font-family: 'Raleway';
-        font-size: 18px;
-        line-height: 1.33;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-    }
-
-    .footer-nav{
+        color: var(--section-colour);
         font-size: 16px;
-        line-height: 1.5;
+        background-color: #ffffff;
     }
-
-    .footer>p{
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #E7E9FC;
-    }
-
-    .contatcs{
-        font-size: 16px;
-        line-height: 1.5px;
-        color: #434455;
-    }
-
-    .title{
-        font-size: 56px;
-        line-height: 1.07x;
-
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #ffffff;
-    }
-
-    h2{
-        font-size: 36px;
-        line-height: 1.1;
-
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-    }
-
-    h3{
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-    }
-    li>p{
-        font-size: 16px;
-        line-height: 1.5;
-
-        letter-spacing: 0.02em;
-        color: #434455;
-    }
-    
 
     ul{
         list-style-type: none;
@@ -89,6 +24,90 @@
     a{
         text-decoration: none;
         color: inherit;
+    }
+
+    .color-logo{
+        color: var(--active-button);
+    }
+
+
+    .logo{
+        color: var(--section-colour);
+        font-family: 'Raleway';
+        font-size: 18px;
+        line-height: 1.33;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    footer>.logo{
+        color: var(--accent);
+    }
+
+    .footer-link{
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color-text-main);
+        font-weight: 500;
+    }
+
+    .footer-link:hover,
+    .footer-link:focus{
+        color: var(--active-button);
+    }
+
+    .footer-text{
+        line-height: 1.5;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: var(--accent);
+    }
+
+    .contatc-link{
+        line-height: 1.5px;
+        letter-spacing: 0.02em;
+        font-weight: 400;
+        color:var(--text-discription);
+        font-style: normal;
+    }
+
+    .contatc-link:hover,
+    .contatc-link:focus{
+        color: var(--active-button);
+    }
+
+    .title{
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+    }
+
+    .section-title{
+        font-size: 36px;
+        line-height: 1.1;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+
+    .section-subtitle{
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        text-align: center;
+    }
+    .section-text{
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--text-discription);
+        text-align: center;
+        letter-spacing: 0.02em;
     }
 
     .banner,footer{
@@ -100,25 +119,29 @@
     }
 
     button{
-        background-color: var(--active-button);
+        background-color: var(--primary-brand);
         color: #ffffff;
         cursor: pointer;
-        font-size: 16px;
         line-height: 1.5; 
         display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.04em;
+    }
+
+    .mainpage-button:hover,
+    .mainpage-button:focus{
+        background-color: var(--active-button);
 
     }
 
-    li>button{
+    .selection-button{
         background-color: var(--cloud-bckground);
         color: var(--active-button);
     }
-    li>button:hover{
+    .selection-button:hover,
+    .selection-button:focus{
         background-color: var(--active-button);
-        color: var(--cloud-bckground);
-        
+        color: var(--cloud-bckground); 
     }
     
